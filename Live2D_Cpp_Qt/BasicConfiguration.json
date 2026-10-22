@@ -1,0 +1,6 @@
+{
+    "user_profile_path": "../../",
+    "logs_file_extension": ".ulog",
+    "logs_path": "user/Logs/",
+    "config_path": "user/Config/"
+}

@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.props" Condition="Exists('..\packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.props')" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E7980FBE-42AF-463A-8963-368EAF9A9CF1}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>6.7.3_msvc2022_64</QtInstall>
+    <QtModules>core;gui;network;widgets;opengl;openglwidgets;websockets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>6.8.0_msvc2022_64</QtInstall>
+    <QtModules>core;gui;network;widgets;opengl;openglwidgets;sql;websockets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <OutDir>..\..\App\DDeskPet</OutDir>
+    <TargetName>DDeskPet</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutDir>..\..\AppRelease\DDeskPet\</OutDir>
+    <TargetName>DDeskPet</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\Thirdparty\QHotkey\QHotkey;..\AI\ALL-AI-Cpp\include;..\AI\ALL-AI-Cpp\include\nlohmann;..\Thirdparty\stb;..\Thirdparty\glfw\include;..\Thirdparty\glew\include;..\Thirdparty\Framework\src;..\Thirdparty\Core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\Lib\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Framework.lib;libglew32d.lib;glfw3.lib;Live2DCubismCore_MTd.lib;-NODEFAULTLIB:libcmtd.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;Dwmapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\AI\ALL-AI-Cpp\include;..\AI\ALL-AI-Cpp\include\nlohmann;..\ThirdpartyRelease\Core\include;..\ThirdpartyRelease\glew\include;..\ThirdpartyRelease\glfw\include;..\ThirdpartyRelease\stb;..\ThirdpartyRelease\Framework\src;..\ThirdpartyRelease\QHotkey\QHotkey;..\ThirdpartyRelease\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>CSM_TARGET_WIN_GL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4996;4267;4244;4018;4828;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Framework.lib;glfw3dll.lib;libglew32.lib;opengl32.lib;glu32.lib;-NODEFAULTLIB:libcmt.lib;Live2DCubismCore_MD.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;dwmapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\Lib\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Thirdparty\Framework\src\CubismDefaultParameterId.cpp" />
+    <ClCompile Include="..\Thirdparty\QHotkey\QHotkey\qhotkey.cpp" />
+    <ClCompile Include="..\Thirdparty\QHotkey\QHotkey\qhotkey_win.cpp" />
+    <ClCompile Include="AIManager.cpp" />
+    <ClCompile Include="ConvenientTool.cpp" />
+    <ClCompile Include="CubismWindowStyle.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="DDeskPetConfigInterfaceBase.cpp" />
+    <ClCompile Include="DDeskPetConfig_Account.cpp" />
+    <ClCompile Include="DDeskPetConfig_Base.cpp" />
+    <ClCompile Include="DDeskPetConfig_Chat.cpp" />
+    <ClCompile Include="DDeskPetConfig_Developer.cpp" />
+    <ClCompile Include="DDeskPetConfig_Function.cpp" />
+    <ClCompile Include="DDeskPetConfig_Model.cpp" />
+    <ClCompile Include="DDeskPetConfig_Personalization.cpp" />
+    <ClCompile Include="DDeskPetConfig_SetAI.cpp" />
+    <ClCompile Include="FileOperator.cpp" />
+    <ClCompile Include="GLCore.cpp" />
+    <ClCompile Include="LAppChatHistoryManager.cpp" />
+    <ClCompile Include="LAppCustomSlider.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="LAppCustomLabel.cpp" />
+    <ClCompile Include="LAppCusWidget.cpp" />
+    <ClCompile Include="LAppDDeskPetLog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="LAppDeveloperPage.cpp" />
+    <ClCompile Include="LAppFuncDefine.hpp" />
+    <ClCompile Include="LAppModelMessage.cpp" />
+    <ClCompile Include="LAppLive2DModelsManager.cpp" />
+    <ClCompile Include="LAppPluginsManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <QtMoc Include="LAppSystemInfo.cpp">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).moc</QtMocFileName>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).moc</QtMocFileName>
+    </QtMoc>
+    <ClInclude Include="LAppPluginsManager.h" />
+    <ClCompile Include="LAppQWidgetStyleManager.cpp" />
+    <ClCompile Include="LAppTray.cpp" />
+    <ClCompile Include="LAppUserInterface.cpp" />
+    <ClCompile Include="MouseHook.cpp" />
+    <ClCompile Include="Configuration.cpp" />
+    <ClCompile Include="qhotkey_Manager.cpp" />
+    <ClCompile Include="ServerAI.cpp" />
+    <ClCompile Include="ServerChildProcessManager.cpp" />
+    <ClCompile Include="ServerRequestProcessor.cpp" />
+    <ClCompile Include="ServerUser.cpp" />
+    <ClCompile Include="SettingDialog.cpp" />
+    <ClCompile Include="SettingFuncPage.cpp" />
+    <ClCompile Include="SettingPageWidgetObjectName.cpp" />
+    <ClCompile Include="SettingReusablePage.cpp" />
+    <ClCompile Include="TouchManager.cpp" />
+    <ClCompile Include="SettingVTabPageBar.cpp" />
+    <QtRcc Include="Live2D_Cpp_Qt.qrc" />
+    <QtUic Include="Live2D_Cpp_Qt.ui" />
+    <QtMoc Include="Live2D_Cpp_Qt.h" />
+    <ClCompile Include="LAppAllocator.cpp" />
+    <ClCompile Include="LAppDefine.cpp" />
+    <ClCompile Include="LAppDelegate.cpp" />
+    <ClCompile Include="LAppLive2DManager.cpp" />
+    <ClCompile Include="LAppModel.cpp" />
+    <ClCompile Include="LAppPal.cpp" />
+    <ClCompile Include="LAppSprite.cpp" />
+    <ClCompile Include="LAppTextureManager.cpp" />
+    <ClCompile Include="LAppView.cpp" />
+    <ClCompile Include="LAppWavFileHandler.cpp" />
+    <ClCompile Include="Live2D_Cpp_Qt.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="SettingVTabPageBar.h" />
+    <QtMoc Include="GLCore.h" />
+    <ClInclude Include="..\AI\ALL-AI-Cpp\include\ALL-AI.hpp" />
+    <ClInclude Include="..\AI\ALL-AI-Cpp\include\nlohmann\json.hpp" />
+    <QtMoc Include="..\Thirdparty\QHotkey\QHotkey\qhotkey.h" />
+    <QtMoc Include="..\Thirdparty\QHotkey\QHotkey\qhotkey_p.h" />
+    <ClInclude Include="..\Thirdparty\Framework\src\CubismDefaultParameterId.hpp" />
+    <ClInclude Include="AIManager.h" />
+    <ClInclude Include="ALL-AI-V3.hpp" />
+    <ClInclude Include="Configuration.h" />
+    <ClInclude Include="ConvenientTool.hpp" />
+    <ClInclude Include="CubismWindowStyle.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="DDeskPetConfigInterfaceBase.h" />
+    <ClInclude Include="DDeskPetConfig_Account.h" />
+    <ClInclude Include="DDeskPetConfig_Base.h" />
+    <ClInclude Include="DDeskPetConfig_Chat.h" />
+    <ClInclude Include="DDeskPetConfig_Developer.h" />
+    <ClInclude Include="DDeskPetConfig_Function.h" />
+    <ClInclude Include="DDeskPetConfig_Model.h" />
+    <ClInclude Include="DDeskPetConfig_Personalization.h" />
+    <ClInclude Include="DDeskPetConfig_SetAI.h" />
+    <ClInclude Include="EasyOpenSSL.hpp" />
+    <ClInclude Include="FileOperator.h" />
+    <ClInclude Include="LAppAllocator.hpp" />
+    <QtMoc Include="LAppCustomLabel.h" />
+    <QtMoc Include="LAppChatHistoryManager.h" />
+    <QtMoc Include="LAppCustomSlider.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </QtMoc>
+    <ClInclude Include="LAppDDeskPetLog.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="LAppDefine.hpp" />
+    <ClInclude Include="LAppDelegate.hpp" />
+    <QtMoc Include="LAppDeveloperPage.h" />
+    <ClInclude Include="LAppLive2DManager.hpp" />
+    <ClInclude Include="LAppModel.hpp" />
+    <QtMoc Include="LAppModelMessage.h" />
+    <QtMoc Include="LAppCusWidget.h" />
+    <ClInclude Include="LAppLive2DModelsManager.h" />
+    <ClInclude Include="LAppPal.hpp" />
+    <ClInclude Include="LAppQWidgetStyleManager.h" />
+    <ClInclude Include="LAppSprite.hpp" />
+    <ClInclude Include="LAppSystemInfo.h" />
+    <ClInclude Include="LAppTextureManager.hpp" />
+    <QtMoc Include="LAppTray.hpp" />
+    <QtMoc Include="LAppUserInterface.h" />
+    <ClInclude Include="LAppView.hpp" />
+    <ClInclude Include="LAppWavFileHandler.hpp" />
+    <QtMoc Include="MouseHook.h" />
+    <QtMoc Include="SettingDialog.h" />
+    <QtMoc Include="SettingFuncPage.h" />
+    <QtMoc Include="qhotkey_Manager.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="ServerAI.h" />
+    <QtMoc Include="ServerChildProcessManager.h" />
+    <ClInclude Include="ServerRequestProcessor.h" />
+    <ClInclude Include="ServerUser.h" />
+    <QtMoc Include="SettingReusablePage.h" />
+    <ClInclude Include="SettingPageWidgetObjectName.h" />
+    <ClInclude Include="TouchManager.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\back_class_normal.png" />
+    <Image Include="Resources\close.png" />
+    <Image Include="Resources\icon_gear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Live2D_Cpp_Qt.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\x64\Debug\BasicConfiguration.json" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.targets" Condition="Exists('..\packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Windows.CppWinRT.2.0.220531.1\build\native\Microsoft.Windows.CppWinRT.targets'))" />
+  </Target>
+</Project>

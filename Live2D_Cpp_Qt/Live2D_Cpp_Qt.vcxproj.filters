@@ -1,0 +1,508 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Setting">
+      <UniqueIdentifier>{9a392c4c-7bba-4c05-aa13-493609be5897}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Setting">
+      <UniqueIdentifier>{72c8db28-b7ff-4fdc-a0c0-3f4105692c81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\AI">
+      <UniqueIdentifier>{6a8b8b18-792b-48a5-b15d-8fb3c3ff6ac1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tray">
+      <UniqueIdentifier>{64b8d7d3-4904-48ba-a4b7-7039da144094}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tray">
+      <UniqueIdentifier>{a2e1b10a-2524-4d45-90fb-502a16731e7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Server">
+      <UniqueIdentifier>{fe5f2687-55be-406a-809b-5e0d9c72839b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Server">
+      <UniqueIdentifier>{9cd0cdf1-97b6-4a19-bb7c-7b54b977eb4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\System">
+      <UniqueIdentifier>{87ff5924-739f-4b83-bf2f-80fbf98f38ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\System">
+      <UniqueIdentifier>{8a92bd71-938e-4df8-a648-e5e81ac2d4f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Widget">
+      <UniqueIdentifier>{b276cdb5-9dbf-4257-ab26-818db03b599c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Widget">
+      <UniqueIdentifier>{7adf18c8-918e-4902-900b-6559f3d90844}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Interface">
+      <UniqueIdentifier>{dd6bb033-ab22-46a5-a544-0d09d5783934}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Resource_Img">
+      <UniqueIdentifier>{a15c89c9-c004-44be-a34a-8d8420249e92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Interface">
+      <UniqueIdentifier>{d641314a-9ae7-49a0-84d4-da7c8b0b5bde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\File">
+      <UniqueIdentifier>{83c76982-e70c-4032-bb6f-e2c887dc8e42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\File">
+      <UniqueIdentifier>{f79c661e-25b7-4923-86c7-32fbe7b18d56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\File\Config">
+      <UniqueIdentifier>{f50674f9-74e5-4908-aa88-54f027a00596}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Widget\HotKey">
+      <UniqueIdentifier>{91e26f2e-7b96-41e7-8f2c-e214e9e8dd6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Widget\HotKey">
+      <UniqueIdentifier>{5cecf794-23d3-44c1-8022-2d2b1a77f617}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Live2D">
+      <UniqueIdentifier>{b525f0f1-cab6-4988-a551-b433f0600eb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Live2D">
+      <UniqueIdentifier>{52ed0149-fad0-4103-b1ac-bd2f6e22f215}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Config">
+      <UniqueIdentifier>{a8fd9834-3e90-4fad-a36f-76e323c4afae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\File\Manager">
+      <UniqueIdentifier>{dba4d216-931d-4812-afd2-f5e47bbe889d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\File\Manager">
+      <UniqueIdentifier>{d0ad40bc-1770-42b5-9a23-29a77f79d950}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Widget\ModifiedWidget">
+      <UniqueIdentifier>{7f9ec03e-c60d-432e-acf0-3b77aff965eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Widget\ModifiedWidget">
+      <UniqueIdentifier>{6298c180-3099-4728-bfea-10543c546f27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AI">
+      <UniqueIdentifier>{63e13deb-f50b-41ba-8f19-71a162f95546}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tool">
+      <UniqueIdentifier>{aceeadcf-1892-4375-a946-cb91e825fbdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tool">
+      <UniqueIdentifier>{3fa4bf33-e703-41e7-aea9-864ba938b973}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\LoggingModule">
+      <UniqueIdentifier>{ade2e3f8-cd6a-4c17-b6c7-2632295a2797}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\LoggingModule">
+      <UniqueIdentifier>{2ac0ca13-b7b5-4450-a474-432e454c1b03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\File\Config">
+      <UniqueIdentifier>{2bfdc95f-7bd9-4e14-85f2-27997b90aba4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\File\Config\DetailedConfig">
+      <UniqueIdentifier>{ce4a0409-c3d7-4a60-9cb7-c9ce191525bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\File\Config\DetailedConfig">
+      <UniqueIdentifier>{3f1203a7-391f-4579-8afe-e6b144de650e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="Live2D_Cpp_Qt.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtUic Include="Live2D_Cpp_Qt.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtMoc Include="Live2D_Cpp_Qt.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CubismWindowStyle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingDialog.cpp">
+      <Filter>Source Files\Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="Configuration.cpp">
+      <Filter>Source Files\File\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingVTabPageBar.cpp">
+      <Filter>Source Files\Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingFuncPage.cpp">
+      <Filter>Source Files\Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="LAppTray.cpp">
+      <Filter>Source Files\Tray</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerUser.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingReusablePage.cpp">
+      <Filter>Source Files\Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingPageWidgetObjectName.cpp">
+      <Filter>Source Files\Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="LAppCusWidget.cpp">
+      <Filter>Source Files\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="LAppUserInterface.cpp">
+      <Filter>Source Files\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Thirdparty\QHotkey\QHotkey\qhotkey.cpp">
+      <Filter>Source Files\Widget\HotKey</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Thirdparty\QHotkey\QHotkey\qhotkey_win.cpp">
+      <Filter>Source Files\Widget\HotKey</Filter>
+    </ClCompile>
+    <ClCompile Include="qhotkey_Manager.cpp">
+      <Filter>Source Files\Widget\HotKey</Filter>
+    </ClCompile>
+    <ClCompile Include="LAppAllocator.cpp">
+      <Filter>Source Files\Live2D</Filter>
+    </ClCompile>
+    <ClCompile Include="LAppDefine.cpp">
+      <Filter>Source Files\Live2D</Filter>
+    </ClCompile>
+    <ClCompile Include="LAppDelegate.cpp">
+      <Filter>Source Files\Live2D</Filter>
+    </ClCompile>
+    <ClCompile Include="LAppLive2DManager.cpp">
+      <Filter>Source Files\Live2D</Filter>
+    </ClCompile>
+    <ClCompile Include="LAppModel.cpp">
+      <Filter>Source Files\Live2D</Filter>
+    </ClCompile>
+    <ClCompile Include="LAppModelMessage.cpp">
+      <Filter>Source Files\Live2D</Filter>
+    </ClCompile>
+    <ClCompile Include="LAppPal.cpp">
+      <Filter>Source Files\Live2D</Filter>
+    </ClCompile>
+    <ClCompile Include="LAppSprite.cpp">
+      <Filter>Source Files\Live2D</Filter>
+    </ClCompile>
+    <ClCompile Include="LAppTextureManager.cpp">
+      <Filter>Source Files\Live2D</Filter>
+    </ClCompile>
+    <ClCompile Include="LAppView.cpp">
+      <Filter>Source Files\Live2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Live2D_Cpp_Qt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseHook.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="TouchManager.cpp">
+      <Filter>Source Files\Live2D</Filter>
+    </ClCompile>
+    <ClCompile Include="LAppWavFileHandler.cpp">
+      <Filter>Source Files\Live2D</Filter>
+    </ClCompile>
+    <ClCompile Include="GLCore.cpp">
+      <Filter>Source Files\Live2D</Filter>
+    </ClCompile>
+    <ClCompile Include="FileOperator.cpp">
+      <Filter>Source Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="LAppLive2DModelsManager.cpp">
+      <Filter>Source Files\File\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="LAppPluginsManager.cpp">
+      <Filter>Source Files\File\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="LAppQWidgetStyleManager.cpp">
+      <Filter>Source Files\File\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="LAppCustomLabel.cpp">
+      <Filter>Source Files\Widget\ModifiedWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="LAppChatHistoryManager.cpp">
+      <Filter>Source Files\File\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="AIManager.cpp">
+      <Filter>Source Files\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerAI.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerChildProcessManager.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerRequestProcessor.cpp">
+      <Filter>Source Files\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="LAppDeveloperPage.cpp">
+      <Filter>Source Files\Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Thirdparty\Framework\src\CubismDefaultParameterId.cpp">
+      <Filter>Source Files\Live2D</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvenientTool.cpp">
+      <Filter>Source Files\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="LAppCustomSlider.cpp">
+      <Filter>Source Files\Widget\ModifiedWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="LAppFuncDefine.hpp">
+      <Filter>Header Files\Live2D</Filter>
+    </ClCompile>
+    <ClCompile Include="LAppDDeskPetLog.cpp">
+      <Filter>Source Files\LoggingModule</Filter>
+    </ClCompile>
+    <ClCompile Include="DDeskPetConfigInterfaceBase.cpp">
+      <Filter>Source Files\File\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="DDeskPetConfig_Account.cpp">
+      <Filter>Source Files\File\Config\DetailedConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="DDeskPetConfig_Personalization.cpp">
+      <Filter>Source Files\File\Config\DetailedConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="DDeskPetConfig_SetAI.cpp">
+      <Filter>Source Files\File\Config\DetailedConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="DDeskPetConfig_Function.cpp">
+      <Filter>Source Files\File\Config\DetailedConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="DDeskPetConfig_Chat.cpp">
+      <Filter>Source Files\File\Config\DetailedConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="DDeskPetConfig_Model.cpp">
+      <Filter>Source Files\File\Config\DetailedConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="DDeskPetConfig_Developer.cpp">
+      <Filter>Source Files\File\Config\DetailedConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="DDeskPetConfig_Base.cpp">
+      <Filter>Source Files\File\Config\DetailedConfig</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CubismWindowStyle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AI\ALL-AI-Cpp\include\ALL-AI.hpp">
+      <Filter>Header Files\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AI\ALL-AI-Cpp\include\nlohmann\json.hpp">
+      <Filter>Header Files\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerUser.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="SettingPageWidgetObjectName.h">
+      <Filter>Header Files\Setting</Filter>
+    </ClInclude>
+    <ClInclude Include="LAppSystemInfo.h">
+      <Filter>Header Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="LAppAllocator.hpp">
+      <Filter>Header Files\Live2D</Filter>
+    </ClInclude>
+    <ClInclude Include="LAppDefine.hpp">
+      <Filter>Header Files\Live2D</Filter>
+    </ClInclude>
+    <ClInclude Include="LAppDelegate.hpp">
+      <Filter>Header Files\Live2D</Filter>
+    </ClInclude>
+    <ClInclude Include="LAppLive2DManager.hpp">
+      <Filter>Header Files\Live2D</Filter>
+    </ClInclude>
+    <ClInclude Include="LAppModel.hpp">
+      <Filter>Header Files\Live2D</Filter>
+    </ClInclude>
+    <ClInclude Include="LAppPal.hpp">
+      <Filter>Header Files\Live2D</Filter>
+    </ClInclude>
+    <ClInclude Include="LAppSprite.hpp">
+      <Filter>Header Files\Live2D</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files\Live2D</Filter>
+    </ClInclude>
+    <ClInclude Include="LAppTextureManager.hpp">
+      <Filter>Header Files\Live2D</Filter>
+    </ClInclude>
+    <ClInclude Include="LAppView.hpp">
+      <Filter>Header Files\Live2D</Filter>
+    </ClInclude>
+    <ClInclude Include="LAppWavFileHandler.hpp">
+      <Filter>Header Files\Live2D</Filter>
+    </ClInclude>
+    <ClInclude Include="TouchManager.hpp">
+      <Filter>Header Files\Live2D</Filter>
+    </ClInclude>
+    <ClInclude Include="FileOperator.h">
+      <Filter>Header Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="LAppLive2DModelsManager.h">
+      <Filter>Header Files\File\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="LAppQWidgetStyleManager.h">
+      <Filter>Header Files\File\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerAI.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="AIManager.h">
+      <Filter>Header Files\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerRequestProcessor.h">
+      <Filter>Header Files\Server</Filter>
+    </ClInclude>
+    <ClInclude Include="ConvenientTool.hpp">
+      <Filter>Header Files\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Thirdparty\Framework\src\CubismDefaultParameterId.hpp">
+      <Filter>Header Files\Live2D</Filter>
+    </ClInclude>
+    <ClInclude Include="EasyOpenSSL.hpp">
+      <Filter>Header Files\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="ALL-AI-V3.hpp">
+      <Filter>Header Files\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="LAppDDeskPetLog.h">
+      <Filter>Header Files\LoggingModule</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration.h">
+      <Filter>Header Files\File\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="DDeskPetConfigInterfaceBase.h">
+      <Filter>Header Files\File\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="DDeskPetConfig_Account.h">
+      <Filter>Header Files\File\Config\DetailedConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="DDeskPetConfig_Personalization.h">
+      <Filter>Header Files\File\Config\DetailedConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="DDeskPetConfig_SetAI.h">
+      <Filter>Header Files\File\Config\DetailedConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="DDeskPetConfig_Function.h">
+      <Filter>Header Files\File\Config\DetailedConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="DDeskPetConfig_Chat.h">
+      <Filter>Header Files\File\Config\DetailedConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="DDeskPetConfig_Model.h">
+      <Filter>Header Files\File\Config\DetailedConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="DDeskPetConfig_Developer.h">
+      <Filter>Header Files\File\Config\DetailedConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="DDeskPetConfig_Base.h">
+      <Filter>Header Files\File\Config\DetailedConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="LAppPluginsManager.h">
+      <Filter>Header Files\File\Manager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="SettingDialog.h">
+      <Filter>Header Files\Setting</Filter>
+    </QtMoc>
+    <QtMoc Include="SettingVTabPageBar.h">
+      <Filter>Header Files\Setting</Filter>
+    </QtMoc>
+    <QtMoc Include="SettingFuncPage.h">
+      <Filter>Header Files\Setting</Filter>
+    </QtMoc>
+    <QtMoc Include="LAppTray.hpp">
+      <Filter>Header Files\Tray</Filter>
+    </QtMoc>
+    <QtMoc Include="SettingReusablePage.h">
+      <Filter>Header Files\Setting</Filter>
+    </QtMoc>
+    <QtMoc Include="LAppSystemInfo.cpp">
+      <Filter>Source Files\System</Filter>
+    </QtMoc>
+    <QtMoc Include="LAppCusWidget.h">
+      <Filter>Header Files\Widget</Filter>
+    </QtMoc>
+    <QtMoc Include="LAppUserInterface.h">
+      <Filter>Header Files\Interface</Filter>
+    </QtMoc>
+    <QtMoc Include="..\Thirdparty\QHotkey\QHotkey\qhotkey.h">
+      <Filter>Header Files\Widget\HotKey</Filter>
+    </QtMoc>
+    <QtMoc Include="..\Thirdparty\QHotkey\QHotkey\qhotkey_p.h">
+      <Filter>Header Files\Widget\HotKey</Filter>
+    </QtMoc>
+    <QtMoc Include="qhotkey_Manager.h">
+      <Filter>Header Files\Widget\HotKey</Filter>
+    </QtMoc>
+    <QtMoc Include="GLCore.h">
+      <Filter>Header Files\Live2D</Filter>
+    </QtMoc>
+    <QtMoc Include="LAppModelMessage.h">
+      <Filter>Header Files\Live2D</Filter>
+    </QtMoc>
+    <QtMoc Include="MouseHook.h">
+      <Filter>Header Files\System</Filter>
+    </QtMoc>
+    <QtMoc Include="LAppCustomLabel.h">
+      <Filter>Header Files\Widget\ModifiedWidget</Filter>
+    </QtMoc>
+    <QtMoc Include="LAppChatHistoryManager.h">
+      <Filter>Header Files\File\Manager</Filter>
+    </QtMoc>
+    <QtMoc Include="ServerChildProcessManager.h">
+      <Filter>Header Files\Server</Filter>
+    </QtMoc>
+    <QtMoc Include="LAppDeveloperPage.h">
+      <Filter>Header Files\Widget</Filter>
+    </QtMoc>
+    <QtMoc Include="LAppCustomSlider.h">
+      <Filter>Header Files\Widget\ModifiedWidget</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\back_class_normal.png">
+      <Filter>Resource Files\Resource_Img</Filter>
+    </Image>
+    <Image Include="Resources\close.png">
+      <Filter>Resource Files\Resource_Img</Filter>
+    </Image>
+    <Image Include="Resources\icon_gear.png">
+      <Filter>Resource Files\Resource_Img</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Live2D_Cpp_Qt.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\x64\Debug\BasicConfiguration.json">
+      <Filter>Resource Files\Config</Filter>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/Live2D_Cpp_Qt">
+        <file>Resources/back_class_normal.png</file>
+        <file>Resources/close.png</file>
+        <file>Resources/icon_gear.png</file>
+    </qresource>
+</RCC>
