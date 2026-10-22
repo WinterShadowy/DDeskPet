@@ -1,0 +1,69 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "FileReferences_Moc_0.moc3",
+		"Textures": [
+			"textures/FileReferences_Textures_0_0.png"
+		],
+		"Physics": "physics/FileReferences_Physics_0.physic3.json",
+		"Expressions": [
+			{
+				"Name": "生气",
+				"File": "expressions/FileReferences_Expressions_0_File_0.exp3.json"
+			},
+			{
+				"Name": "靖妖傩舞",
+				"File": "expressions/FileReferences_Expressions_1_File_0.exp3.json"
+			},
+			{
+				"Name": "傲娇",
+				"File": "expressions/FileReferences_Expressions_2_File_0.exp3.json"
+			},
+			{
+				"Name": "cat",
+				"File": "expressions/FileReferences_Expressions_3_File_0.exp3.json"
+			},
+			{
+				"Name": "红晕",
+				"File": "expressions/FileReferences_Expressions_4_File_0.exp3.json"
+			}
+		],
+		"Motions": {
+			"Start": [
+				{
+					"File": "motions/FileReferences_Motions_Start_0_File_0.motion3.json",
+					"Sound": "sounds/FileReferences_Motions_Start_0_Sound_0.wav"
+				}
+			],
+			"Tap": [
+				{
+					"File": "motions/tap/FileReferences_Motions_Tap_0_File_0.motion3.json",
+					"Sound": "sounds/FileReferences_Motions_Tap_0_Sound_0.wav"
+				},
+				{
+					"File": "motions/tap/FileReferences_Motions_Tap_1_File_0.motion3.json",
+					"Sound": "sounds/FileReferences_Motions_Tap_1_Sound_0.wav"
+				},
+				{
+					"File": "motions/tap/FileReferences_Motions_Tap_2_File_0.motion3.json",
+					"Sound": "sounds/FileReferences_Motions_Tap_2_Sound_0.wav"
+				},
+				{
+					"File": "motions/tap/FileReferences_Motions_Tap_3_File_0.motion3.json",
+					"Sound": "sounds/FileReferences_Motions_Tap_3_Sound_0.wav"
+				},
+				{
+					"File": "motions/tap/FileReferences_Motions_Tap_4_File_0.motion3.json",
+					"Sound": "sounds/FileReferences_Motions_Tap_4_Sound_0.wav"
+				}
+			],
+			"Tick#2": [
+				{
+					"File": "motions/tap/FileReferences_Motions_Tap_4_File_0.motion3.json",
+					"Sound": "sounds/FileReferences_Motions_Tap_4_Sound_0.wav"
+				}
+			]
+		}
+	},
+	"HitAreas": []
+}
